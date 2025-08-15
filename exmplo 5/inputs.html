@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site 1</title>
+    </head>
+    <body>
+        <form>
+        <label for="email">email - </label>
+        <input type="email" name="email" id="email" placeholder="entre aqui o email"> <br>
+        
+        <label for="url">URL - </label>
+        <input type="url" name="url" id="url" placeholder="www.yoursitehere.com"> <br>
+        <label for="date">data - </label>
+        <input type="date" name="data" id="data" min="1900-01-01" max="2025-08-14"> <br>
+        <label for="tel"> telefone</label>
+        <input type="tel" name="tel" id="tel" placeholder="(XX) XXXX- XXXX"> <br>
+        <label for="number">Numeros - </label>
+        <input type="number" name="number" id="number" min="1" max="10" value="1"> <br>
+        <label for="color">cor - </label>
+        <input type="color" name="cor" id="cor" value="#FF0000"> <br>
+        <label for="raio">Brilho - </label>
+        <input type="range" name="raio" id="raio" value="0" min="0" max="100" list="tickmark" step="25"> <br>
+        <datalist id="tickmark">
+            <option value="0"></option>
+            <option value="25"></option>
+            <option value="50"></option>
+            <option value="75"></option>
+            <option value="100"></option>
+        </datalist>
+        <label for="browser">Navegador - </label>
+        <input type="text" name="browser" id="browser" list="browsers"> <br>
+        <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Edgy"></option>
+            <option value="Opera"></option>
+            <option value="Firefox"></option>
+        </datalist>
+        <label for="textarea">comentario</label>
+        <textarea name="comments" id="comments" rows="4" cols="40" placeholder="deixe aqui seu comentario sobre o site..." maxlength="200"></textarea> <br>
+        <input type="submit" value="enviar"> <br>
+        </form>
+        <br>
+        <hr>
+        <br>
+        <form oninput="result.value=parseInt(a.value) + parseInt(b.value)">
+            <label for="a">Numero A:</label>
+            <input type="number" name="a" id="a" value="0">
+            +
+            <label for="b">Numero B:</label>
+            <input type="number" name="b" id="b" value="0" rows="10">
+            = 
+            <output name="result">0</output>
+        </form>
+        <br>
+        <hr>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name"> <br>
+                <label for="tel">Email</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+        </form>
+        <br>
+        <hr>
+        <br>
+    </body>
+</html>
